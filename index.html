@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>steg-it</title>
     <meta name="description" content="This website provides multiple examples for Steganography in text and image files.">
+    <meta name="keywords" content="steganography, steganalysis, webapp, learning-by-doing">
+    <title>steg-it</title>
     <link rel="icon" href="icon.svg"/>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -14,69 +16,248 @@
             <img src="icon.svg" alt="logo"/>
             <h1>steg-it</h1>
         </a>
-        <a href="#how-it-works">how it works</a>
+        <div>
+            <a href="https://github.com/AntVil/steg-it">contribute</a>
+            <a href="#how-it-works">how it works</a>
+        </div>
     </header>
     <main id="home">
         <nav>
-            <a href="#steg-1"><span>csv</span><span>easy</span></a>
-            <a href="#steg-2"><span>docx</span><span>easy</span></a>
-            <a href="#steg-3"><span>html</span><span>medium</span></a>
-            <a href="#steg-4"><span>json</span><span>medium</span></a>
-            <a href="#steg-5"><span>ppm</span><span>hard</span></a>
-            <a href="#steg-6"><span>svg</span><span>medium</span></a>
-            <a href="#steg-7"><span>txt</span><span>easy</span></a>
-            <a href="#steg-8"><span>txt</span><span>easy</span></a>
+            <a href="#steg-1">
+                <label>STEG-1</label>
+                <div>
+                    <span class="csv">csv</span>
+                    <span class="easy">easy</span>
+                </div>
+            </a>
+            <a href="#steg-2">
+                <label>STEG-2</label>
+                <div>
+                    <span class="docx">docx</span>
+                    <span class="easy">easy</span>
+                </div>
+            </a>
+            <a href="#steg-3">
+                <label>STEG-3</label>
+                <div>
+                    <span class="html">html</span>
+                    <span class="medium">medium</span>
+                </div>
+            </a>
+            <a href="#steg-4">
+                <label>STEG-4</label>
+                <div>
+                    <span class="json">json</span>
+                    <span class="medium">medium</span>
+                </div>
+            </a>
+            <a href="#steg-5">
+                <label>STEG-5</label>
+                <div>
+                    <span class="ppm">ppm</span>
+                    <span class="hard">hard</span>
+                </div>
+            </a>
+            <a href="#steg-6">
+                <label>STEG-6</label>
+                <div>
+                    <span class="svg">svg</span>
+                    <span class="medium">medium</span>
+                </div>
+            </a>
+            <a href="#steg-7">
+                <label>STEG-7</label>
+                <div>
+                    <span class="txt">txt</span>
+                    <span class="easy">easy</span>
+                </div>
+            </a>
+            <a href="#steg-8">
+                <label>STEG-8</label>
+                <div>
+                    <span class="txt">txt</span>
+                    <span class="easy">easy</span>
+                </div>
+            </a>
         </nav>
 
         <section id="steg-1">
-            <a href="#home">back</a>
-            <a href="steg/file.csv" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-1</h2>
+                <p>Find the message inside this file: <a href="steg/steg-1.csv" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                    <p>In Steganography participants often try to hide content in optional or unused resources. What would be such resources in this csv-file?</p>
+                </details>
+                <details>
+                    <summary>Hint 2</summary>
+                    <p>In some cases it's necessary to have a better understanding of the type of the cover-object. The csv-standard is not just about commas and also includes escape characters. How could they be used to encode information?</p>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript.</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="56f0e5b2847c3a0b1c4b6b89dfcdfa30712c57e4e28afe0acaa1b123d09c0cfe" />
+                <h4>Attribution</h4>
+                <p>
+                    The data to generate this file was taken from here:
+                    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank" rel="noopener noreferrer">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>
+                </p>
+            </div>
         </section>
         <section id="steg-2">
-            <a href="#home">back</a>
-            <a href="steg/file.docx" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-2</h2>
+                <p>Find the message inside this file: <a href="steg/steg-2.docx" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="e06554818e902b4ba339f066967c0000da3fcda4fd7eb4ef89c124fa78bda419" />
+            </div>
         </section>
         <section id="steg-3">
-            <a href="#home">back</a>
-            <a href="steg/file.html" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-3</h2>
+                <p>Find the message inside this file: <a href="steg/steg-3.html" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="91f060a9ad4b39eb228d9537292fab19d252faed06c169d0fdcb4a90560f5676" />
+            </div>
         </section>
         <section id="steg-4">
-            <a href="#home">back</a>
-            <a href="steg/file.json" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-4</h2>
+                <p>Find the message inside this file: <a href="steg/steg-4.json" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="eda71746c01c3f465ffd02b6da15a6518e6fbc8f06f1ac525be193be5507069d" />
+                <h4>Attribution</h4>
+                <p>
+                    The data to generate this file was taken from here:
+                    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank" rel="noopener noreferrer">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>
+                </p>
+            </div>
         </section>
         <section id="steg-5">
-            <a href="#home">back</a>
-            <a href="steg/file.ppm" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-5</h2>
+                <p>Find the message inside this file: <a href="steg/steg-5.ppm" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="4063e12acc5102510afb3c51a06d50b225de40d3194a972dce4d52225ee72582" />
+            </div>
         </section>
         <section id="steg-6">
-            <a href="#home">back</a>
-            <a href="steg/file.svg" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-6</h2>
+                <p>Find the message inside this file: <a href="steg/steg-6.svg" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="3549b0028b75d981cdda2e573e9cb49dedc200185876df299f912b79f69dabd8" />
+            </div>
         </section>
         <section id="steg-7">
-            <a href="#home">back</a>
-            <a href="steg/file.txt" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-7</h2>
+                <p>Find the message inside this file: <a href="steg/steg-7.txt" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="72f106acc268775da28b21eb67479bd65af4135c24d999cd9460b832772a3e22" />
+            </div>
         </section>
         <section id="steg-8">
-            <a href="#home">back</a>
-            <a href="steg/file.txt" download>challenge file</a>
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-8</h2>
+                <p>Find the message inside this file: <a href="steg/steg-8.txt" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="57eb5aedb42b638bbf6c7c7fc40416a238ab7edb082ac90ae8b30fa95a96c33b" />
+            </div>
+        </section>
+        <section id="steg-9">
+            <div>
+                <a href="#home">go back</a>
+                <h2>STEG-9</h2>
+                <p>Find the message inside this file: <a href="steg/steg-9.txt" download>challenge file</a></p>
+                <h3>Hints</h3>
+                <details>
+                    <summary>Hint 1</summary>
+                </details>
+                <h3>Validate</h3>
+                <p>If you have a guess you can validate it here:</p>
+                <noscript>To enable Validation you will have to enable JavaScript</noscript>
+                <input type="text" minlength="8" oninput="validate(this)" placeholder="your guess" data-validation-hash="e9f5607761cac00ac2ee7b349aedb414e52020134b78622a1c79ef299cf35494" />
+            </div>
         </section>
     </main>
     <footer id="how-it-works">
         <article>
         <h2>How it works</h2>
-            In <a href="https://en.wikipedia.org/wiki/Steganography">Steganography</a> a participant tries to hide information in a cover-object in plain sight.
-            It can be applied to many things like images, text, filesystems and even more.
-            After the information was embedded it can be extracted again.
+            <p>
+                In <a href="https://en.wikipedia.org/wiki/Steganography">Steganography</a> a participant tries to hide information in a cover-object in plain sight.
+                It can be applied to many things like images, text, filesystems and even more.
+                After the information was embedded it can be extracted again.
+                <br />
+                This website provides a few examples/challenges to find and decipher the hidden messages.
+                Each cover-object will only contains a single hidden message to reduce complexity.
+                The cover-objects are synthetic, which means their only purpose is to hide the message.
+                The found message can be validated on this website.
+                Each message consists of a single lowercased english word.
+                Each word will have at least 8 characters.
+                There will be no punctuation symbol, whitespace or similar characters.
+                <br />
+                If you have trouble finding the message you can get hints on this website as well.
+                But generally try to avoid taking hints, it's a far better experience solving it without.
+                <br />
+                Have fun!
+            </p>
             <br />
-            This website provides a few examples/challenges to find and decipher the hidden messages.
-            Each cover-object will only contains a single hidden message to reduce complexity.
-            The cover-objects are synthetic, which means their only purpose is to hide the message.
-            The found message can be validated on this website.
-            <br />
-            If you have trouble finding the message you can get hints on this website as well.
-            But generally try to avoid taking hints, it's a far better experience solving it without.
-            <br />
-            Have fun!
+            <aside>
+                Since most people cannot decode binary in their head you can use websites like this one here:
+                <a href="https://dencode.com/en/" target="_blank" rel="noopener noreferrer">https://dencode.com/en/</a>
+            </aside>
         </article>
     </footer>
 </body>
