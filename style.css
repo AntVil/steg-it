@@ -194,6 +194,11 @@ main {
                     color: #000;
                 }
 
+                &.sql {
+                    background-color: #D0A;
+                    color: #000;
+                }
+
                 &.txt {
                     background-color: #aaa;
                     color: #000;

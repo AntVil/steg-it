@@ -1,8 +1,6 @@
 async function validate(validationElement) {
     let message = validationElement.value
 
-    console.log(validationElement)
-
     if(message.length == 0) {
         validationElement.setAttribute("class", "")
         return
@@ -20,7 +18,6 @@ async function validate(validationElement) {
 
     const expectedHash = validationElement.getAttribute("data-validation-hash");
 
-    console.log(hash)
     if (hash == expectedHash) {
         validationElement.setAttribute("class", "valid");
     } else {
